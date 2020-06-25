@@ -1,0 +1,36 @@
+4 page application
+Web site for a fictional company
+    Feel free to get creative!
+    A simple storefront is a good fallback.
+All pages should have:
+    An identical nav bar with links to the other pages
+        either vertical or horizontal
+    An idential footer, fixed to the bottom of the page
+    An idential header, with the fictional company's logo 
+        Image or text
+    An space for an aside
+Landing page:
+    The home page should have an introduction to the company
+    It should display a banner image with a text description of the company
+        Optional: the image should cycle or scroll
+About Us Page:
+    It should display a series of images with a text box underneath
+    The text box should have default text displayed
+    If a user mouses over an image, new text should be displayed in the box
+    WHen the user leaves the image, the text should revert to the default message
+        Optional: Add an animation when a user mouses over an image
+Products and Services Page:
+    It should display a series of images and text descriptions of products/services
+    There should be a "cart" icon that displays the user's current cart and total cost
+    Each product/service should have a button that will add it to the cart
+    The items in the cart should have a button that will remove it from the cart
+        Optional: Implement a search bar for products
+    The cart does NOT need to persist
+Customers Page:
+    It should display a form that will capture a user's input
+    The form should capture a user's name, username, email
+    The form should have radio buttons for if they want to be on a mailing list
+    The form should have a checkbox for what services they are interested in
+    Each user should be displayed in a list when the user submits their data
+        Optional: implement a search bar for the customers, and add an edit feature
+    The customers do NOT need to persist
