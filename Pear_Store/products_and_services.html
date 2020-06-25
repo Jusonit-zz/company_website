@@ -1,11 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./css/products_and_services.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     
-</body>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+  
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class='navbar navbar-expand-md navbar-light bg-light sticky-top'>
+        <div class="container-fluid">
+            <img class="navbar-brand" src="images/pear.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive"> 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Customer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- input tag -->
+     <input id="searchbar" onkeyup="search_products()" type="text"
+     name="search" placeholder="Search products.."> 
+   
+ <!-- ordered list -->
+ <ol id='list'> 
+     <li class="products">Cat</li> 
+     <li class="products">Dog</li> 
+     <li class="products">Elephant</li> 
+     <li class="products">Fish</li> 
+     <li class="products">Gorilla</li> 
+     <li class="products">Monkey</li> 
+     <li class="products">Turtle</li> 
+     <li class="products">Whale</li> 
+     <li class="products">Aligator</li> 
+     <li class="products">Donkey</li> 
+     <li class="products">Horse</li> 
+ </ol> 
+   
+ <!-- linking javscript -->
+ <script src="./products_and_services.js"></script>
+
+
+
+
+
+
+    <div class="footer">
+        <p>Footer</p>
+      </div>
+  </body>
 </html>
