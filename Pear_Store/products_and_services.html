@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./css/products_and_services.css">
+     
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/skeleton.css"> 
 
 
     <title>Hello, world!</title>
@@ -51,7 +52,7 @@
         <a href="#"><img src="images/shopping-cart-icon.svg"height="50px">
             <span id="items"class="badge badge-primary">0</span>
             <span id="total-price"class="badge badge-success">0</span>
-
+        </a>
             <script>
                 var items = 0;
                 var totalPrice = 0;
@@ -80,12 +81,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/A8X5S200130djqAG.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Acer Nitro Monitor</h5>
-                            <p class="card-text">$399<sup>.99</sup></p>
-                            <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
-                        </div>
+                        <h5 class="card-title">Monitor - $300</h5>
+                        <p class="card-text">15" monitor 32-bit color</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(300)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(300)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -95,12 +94,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/26-979-009-V01.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">PATRiOT Viper 551 Optical Gaming Mouse</h5>
-                            <p class="card-text">$39<sup>.99</sup></p>
-                            <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
-                        </div>
+                        <h5 class="card-title">Mouse - $15</h5>
+                        <p class="card-text">3-button mouse</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(15)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(15)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -109,10 +106,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/corei9.jpg" alt="Card image cap">
-                        <h5 class="card-title">Intel Core i0-9900K Coffee Lake-8 Core</h5>
-                        <p class="card-text">$509<sup>.99</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+                        <h5 class="card-title">CPU - $150</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(150)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(150)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -121,10 +118,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/ASUSROGMB.jpg" alt="Card image cap">
-                        <h5 class="card-title">ASUS ROG MAXIMUS XII HERO Intel Motherboard</h5>
-                        <p class="card-text">$399<sup>.99</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+                        <h5 class="card-title">Motherboard - $200</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(200)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(200)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -135,10 +132,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/24-475-035-V01.jpg" alt="Card image cap">
-                        <h5 class="card-title">MSI Optix Montor</h5>
-                        <p class="card-text">$799<sup>.99</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+                        <h5 class="card-title">Mousepad - $5</h5>
+                        <p class="card-text">Soft Mousepad</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(5)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(5)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -148,10 +145,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/GIGMB.jpg" alt="Card image cap">
-                        <h5 class="card-title">GIGABYTE Z490 Motherboard</h5>
-                        <p class="card-text">$199<sup>.99</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+                        <h5 class="card-title">3-button Trackball - $5</h5>
+                        <p class="card-text">full range trackball controller</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(5)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(5)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -160,10 +157,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/RipJawRam.jpg" alt="Card image cap">
-                        <h5 class="card-title">Ripjaws V Series 32GB RAM</h5>
-                        <p class="card-text">$117<sup>.99</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+                        <h5 class="card-title">CPU - $5</h5>
+                        <p class="card-text">I-7.</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(5)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(5)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -172,10 +169,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/CorsairRAM.jpg" alt="Card image cap">
-                        <h5 class="card-title">Corsair Vengeance RGB Pro 16GB RAM</h5>
-                        <p class="card-text">$93<sup>.99</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+                        <h5 class="card-title">Racecar Steering Wheel - $5</h5>
+                        <p class="card-text">indycar racing steering wheel</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(5)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(5)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -186,10 +183,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/LogiMouse.jpg" alt="Card image cap">
-                        <h5 class="card-title">Logitech MX ANYWHERE 2s Wireless Mouse</h5>
-                        <p class="card-text">$58<sup>.30</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+                        <h5 class="card-title">Gaming chair - $5</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(5)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(5)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -199,10 +196,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/LogiMouse2.jpg" alt="Card image cap">
-                        <h5 class="card-title">Logitech MX ERGO Advanced Wireless Trackball Mouse</h5>
-                        <p class="card-text">$91<sup>.99</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+                        <h5 class="card-title">Desk</h5>
+                        <p class="card-text">Desk to do gaming with</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(5)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(5)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -211,11 +208,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/CorsairFan.jpg" alt="Card image cap">
-                        <h5 class="card-title">Corsair LL Series  RGB, 120mm Dual Light Loop RGB LED PWM Fan</h5>
-                        <p class="card-text">$129<sup>.99</sup></p>
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
-
+                        <h5 class="card-title">Camera - $5</h5>
+                        <p class="card-text">USB-3 Camera</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(5)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(5)">Sell</a>
                     </div>
                 </div>
             </li>
@@ -224,11 +220,10 @@
             <li class="products">
                 <div class="card">
                     <div class="card-body">
-                        <img class="card-img-top" src="./images/CMFan.jpg" alt="Card image cap">
-                        <h5 class="card-title">Cooler Master SickleFlow Fan</h5>
-                        <p class="card-text">$11<sup>.99</sup></p>                    
-                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
-
+                        <h5 class="card-title">Hand Sanitizer</h5>
+                        <p class="card-text">Hand Sanitizer lotion for anti-bacterial properties</p>
+                        <a href="#" class="btn btn-primary"onClick="buy(5)">Buy</a>
+                        <a href="#" class="btn btn-primary"onClick="sell(5)">Sell</a>
                     </div>
                 </div>
             </li>
