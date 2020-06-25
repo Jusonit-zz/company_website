@@ -1,6 +1,6 @@
 // Variables
 const carrito = document.getElementById('carrito');
-const cursos = document.getElementById('lista-cursos');
+const cursos = document.getElementById('list');
 const listaCursos = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
