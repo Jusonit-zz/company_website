@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="./css/products_and_services.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/products_and_services.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
-  
+    <link rel="stylesheet" href="css/skeleton.css">
+
 
     <title>Hello, world!</title>
   </head>
@@ -20,10 +20,10 @@
     <nav class='navbar navbar-expand-md navbar-light bg-light sticky-top'>
         <div class="container-fluid">
             <img class="navbar-brand" src="images/pear.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive"> 
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">Home</a>
@@ -44,10 +44,37 @@
 
      <!-- input tag -->
      <input id="searchbar" onkeyup="search_products()" type="text"
-     name="search" placeholder="Search products.."> 
-   
+     name="search" placeholder="Search products..">
+
+     <!--shopping cart-->
+     <div style="float:right">
+        <a href="#"><img src="images/shopping-cart-icon.svg"height="50px">
+            <span id="items"class="badge badge-primary">0</span>
+            <span id="total-price"class="badge badge-success">0</span>
+
+            <script>
+                var items = 0;
+                var totalPrice = 0;
+                function buy(price) {
+                    items += 1;
+                    document.getElementById("items").innerHTML = items;
+                    totalPrice += price;
+                    document.getElementById("total-price").innerHTML = "$"+totalPrice;
+                };
+                function sell(price) {
+                    if(items>0) {
+                        items = items-1;
+                        document.getElementById("items").innerHTML = items;
+                        totalPrice = totalPrice - price;
+                        document.getElementById("total-price").innerHTML = "$"+totalPrice;
+                    }
+                };
+            </script>
+    </div>
+    <br>
+
  <!-- ordered list -->
- <ol id='list'> 
+ <ol id='list'>
     <div class="row">
         <div class="col-sm-3">
             <li class="products">
@@ -57,22 +84,22 @@
                         <div class="card-body">
                             <h5 class="card-title">Acer Nitro Monitor</h5>
                             <p class="card-text">$399<sup>.99</sup></p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                         </div>
                     </div>
                 </div>
-            </li>  
+            </li>
         </div>
-        
+
         <div class="col-sm-3">
-            <li class="products"> 
+            <li class="products">
                 <div class="card">
                     <div class="card-body">
                         <img class="card-img-top" src="./images/26-979-009-V01.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">PATRiOT Viper 551 Optical Gaming Mouse</h5>
                             <p class="card-text">$39<sup>.99</sup></p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +112,7 @@
                         <img class="card-img-top" src="./images/corei9.jpg" alt="Card image cap">
                         <h5 class="card-title">Intel Core i0-9900K Coffee Lake-8 Core</h5>
                         <p class="card-text">$509<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                     </div>
                 </div>
             </li>
@@ -97,7 +124,7 @@
                         <img class="card-img-top" src="./images/ASUSROGMB.jpg" alt="Card image cap">
                         <h5 class="card-title">ASUS ROG MAXIMUS XII HERO Intel Motherboard</h5>
                         <p class="card-text">$399<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                     </div>
                 </div>
             </li>
@@ -111,12 +138,12 @@
                         <img class="card-img-top" src="./images/24-475-035-V01.jpg" alt="Card image cap">
                         <h5 class="card-title">MSI Optix Montor</h5>
                         <p class="card-text">$799<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                     </div>
                 </div>
-            </li>  
+            </li>
         </div>
-        
+
         <div class="col-sm-3">
             <li class="products">
                 <div class="card">
@@ -124,7 +151,7 @@
                         <img class="card-img-top" src="./images/GIGMB.jpg" alt="Card image cap">
                         <h5 class="card-title">GIGABYTE Z490 Motherboard</h5>
                         <p class="card-text">$199<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                     </div>
                 </div>
             </li>
@@ -136,7 +163,7 @@
                         <img class="card-img-top" src="./images/RipJawRam.jpg" alt="Card image cap">
                         <h5 class="card-title">Ripjaws V Series 32GB RAM</h5>
                         <p class="card-text">$117<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                     </div>
                 </div>
             </li>
@@ -148,7 +175,7 @@
                         <img class="card-img-top" src="./images/CorsairRAM.jpg" alt="Card image cap">
                         <h5 class="card-title">Corsair Vengeance RGB Pro 16GB RAM</h5>
                         <p class="card-text">$93<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                     </div>
                 </div>
             </li>
@@ -162,12 +189,12 @@
                         <img class="card-img-top" src="./images/LogiMouse.jpg" alt="Card image cap">
                         <h5 class="card-title">Logitech MX ANYWHERE 2s Wireless Mouse</h5>
                         <p class="card-text">$58<sup>.30</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                     </div>
                 </div>
-            </li>  
+            </li>
         </div>
-        
+
         <div class="col-sm-3">
             <li class="products">
                 <div class="card">
@@ -175,7 +202,7 @@
                         <img class="card-img-top" src="./images/LogiMouse2.jpg" alt="Card image cap">
                         <h5 class="card-title">Logitech MX ERGO Advanced Wireless Trackball Mouse</h5>
                         <p class="card-text">$91<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
                     </div>
                 </div>
             </li>
@@ -187,7 +214,8 @@
                         <img class="card-img-top" src="./images/CorsairFan.jpg" alt="Card image cap">
                         <h5 class="card-title">Corsair LL Series  RGB, 120mm Dual Light Loop RGB LED PWM Fan</h5>
                         <p class="card-text">$129<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+
                     </div>
                 </div>
             </li>
@@ -198,18 +226,19 @@
                     <div class="card-body">
                         <img class="card-img-top" src="./images/CMFan.jpg" alt="Card image cap">
                         <h5 class="card-title">Cooler Master SickleFlow Fan</h5>
-                        <p class="card-text">$11<sup>.99</sup></p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <p class="card-text">$11<sup>.99</sup></p>                    
+                        <a href="#" id="vaciar-carrito" class="button u-full-width">purchase</a>
+
                     </div>
                 </div>
             </li>
         </div>
     </div>
- </ol> 
-   
+ </ol>
+
  <!-- linking javscript -->
  <script src="./js/products_and_services.js"></script>
-
+ <script src="js/app.js"></script>
 
 
 
