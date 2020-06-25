@@ -1,4 +1,4 @@
-function search_animal() { 
+function search_products() { 
     let input = document.getElementById('searchbar').value 
     input=input.toLowerCase(); 
     let x = document.getElementsByClassName('products'); 
