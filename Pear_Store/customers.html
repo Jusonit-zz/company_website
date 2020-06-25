@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+
 <body>
     <!-- ******************************************
             TO DO: ADD HEADER/NAV BAR/STYLING...
@@ -47,54 +49,80 @@
             FORM TO CAPTURE A USER'S INPUT
         name, username, email, mailing list, services
         ********************************************-->
-    <form id="personcontact">
-        <label for="name">Name:</label>
-        <input id="name" name="name" type="text">
-        <br><br>
-        <label for="username">Username:</label>
-        <input id="username" name="username" type="text">
-        <br><br>
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="text">
+    <div class="container">
+        <div class="row">
+            <form id="personcontact">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name">Name:</label>
+                    <input id="name" name="name" type="text">
+                    <br>
+                    <label for="username">Username:</label>
+                    <input id="username" name="username" type="text">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="text">
+                </fieldset>
         
-        <p>Add to Mailing List:</p>
-        <input type="radio" id="mailyes" name="mailing" value="yes">
-        <label for="mailyes">Yes</label><br>
-        <input type="radio" id="mailno" name="mailing" value="no">
-        <label for="mailno">No</label><br>
-    </form>
-    
-    <p>Services: </p>
-    <input type="checkbox" id="service1" name="service1" value="service1">
-    <label for="service1"> Service 1</label><br>
-    <input type="checkbox" id="service2" name="service2" value="service2">
-    <label for="vehicle2"> Service 2</label><br>
-    <input type="checkbox" id="service3" name="service3" value="service3">
-    <label for="vehicle3"> Service 3</label><br><br>
+                <fieldset>
+                    <legend>Would you like to join our mailing list?</legend>
+                    <input type="radio" id="mailyes" name="mailing" value="yes">
+                    <label for="mailyes">Yes</label>
+                    <input type="radio" id="mailno" name="mailing" value="no">
+                    <label for="mailno">No</label>
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Which of our sevices are you interested in?</legend>
+                    <input type="checkbox" id="service1" name="service1" value="service1">
+                    <label for="service1"> Service 1</label>
+                    <input type="checkbox" id="service2" name="service2" value="service2">
+                    <label for="vehicle2"> Service 2</label>
+                    <input type="checkbox" id="service3" name="service3" value="service3">
+                    <label for="vehicle3"> Service 3</label>
+                </fieldset>
+                <input type="button" value=" Submit " onclick="SubmitData()">
+            </form>
+        </div>
 
-    <input type="button" value=" Submit " onclick="SubmitData()">
-    <br><br><br>
-    
-    <!-- ******************************************
+        <!-- ******************************************
             TABLE OF USERS INPUT
         ********************************************-->
-    <table id="list" text-align="center">
-        <thead>
-            <tr>
-                <td>Name</td>
-                <td>Username</td>
-                <td>Email</td>
-                <td>Mailing List</td>
-                <td>Services</td>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-    
-     <!-- ******************************************
+
+        <div class="row">
+            <table class="table table-hover" id="list" text-align="center">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Mailing List</th>
+                        <th scope="col">Services</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+        
+
+    <footer class="footer">
+        <p><i class="fa fa-copyright" aria-hidden="true">Copyright 1976</i> <br> <i class="fa fa-trademark" aria-hidden="true">Trademark 1977</i></p>
+    </footer>
+
+    <!-- ******************************************
             TO DO: FINISH FUNCTIONALITY
         ********************************************-->
     <script src="customers.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
