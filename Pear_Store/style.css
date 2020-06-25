@@ -2,3 +2,14 @@
     height: 100px;
     width: 80px;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  height:100px;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(228, 228, 228);
+  color: rgb(7, 3, 3);
+  text-align: center;
+}
