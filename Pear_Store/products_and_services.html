@@ -49,8 +49,19 @@
      <!--shopping cart-->
      <div style="float:right">
         <a href="#"><img src="images/shopping-cart-icon.svg"height="50px">
-            <span class="badge badge-primary">5 Items</span>
-            <span class="badge badge-success">$500</span>
+            <span id="items"class="badge badge-primary">0</span>
+            <span id="total-price"class="badge badge-success">0</span>
+
+            <script>
+                var items = 0;
+                var totalPrice = 0;
+                function onClick(price) {
+                    items += 1;
+                    document.getElementById("items").innerHTML = items;
+                    totalPrice += price;
+                    document.getElementById("total-price").innerHTML = "$"+totalPrice;
+                };
+            </script>
     </div>
     <br>
 
@@ -63,7 +74,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Monitor</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick(5)">Buy</a>
                     </div>
                 </div>
             </li>  
@@ -75,7 +86,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Mouse</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick(7)">Buy</a>
                     </div>
                 </div>
             </li>
@@ -86,7 +97,7 @@
                     <div class="card-body">
                         <h5 class="card-title">CPU</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick(10)">Buy</a>
                     </div>
                 </div>
             </li>
@@ -97,7 +108,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Motherboard</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick(25)">Buy</a>
                     </div>
                 </div>
             </li>
@@ -110,7 +121,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick(30)">Buy</a>
                     </div>
                 </div>
             </li>  
@@ -122,7 +133,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick(1)">Buy</a>
                     </div>
                 </div>
             </li>
@@ -133,7 +144,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick(3)">Buy</a>
                     </div>
                 </div>
             </li>
@@ -144,7 +155,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick(5)">Buy</a>
                     </div>
                 </div>
             </li>
@@ -157,7 +168,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick()">Buy</a>
                     </div>
                 </div>
             </li>  
@@ -169,7 +180,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick()">Buy</a>
                     </div>
                 </div>
             </li>
@@ -180,7 +191,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick()">Buy</a>
                     </div>
                 </div>
             </li>
@@ -191,7 +202,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary"onClick="onClick()">Buy</a>
                     </div>
                 </div>
             </li>
