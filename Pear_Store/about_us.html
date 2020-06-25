@@ -43,12 +43,12 @@
         </div>
     </nav>
     <div class="container">
-        <div class="zone green">🦊</div>
-        <div class="zone green">🐰</div>
-        <div class="zone green">🐸</div>
-        <div class="zone green">🦁</div>
-        <div class="zone green">🐯</div>
-        <div class="zone green">🐭</div>
+        <div class="zone green" id="fox">🦊</div>
+        <div class="zone green" id="rabbit">🐰</div>
+        <div class="zone green" id="frog">🐸</div>
+        <div class="zone green" id="lion">🦁</div>
+        <div class="zone green" id="tiger">🐯</div>
+        <div class="zone green" id="mouse">🐭</div>
         <!-- <div class="d-flex flex-row-reverse"></div>
         <div class="card" style="width: 18rem;">
             <img src="images/me.png" class="card-img-top" alt="...">
@@ -76,15 +76,28 @@
                 aria-hidden="true">Trademark 1977</i></p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("fox").addEventListener("mouseover", function(){
+       var fox = document.getElementById("fox");
+       fox.textContent = "Fox";
+   });
+   document.getElementById("rabbit").addEventListener("mouseover", function(){
+       document.getElementById("rabbit").textContent = "Rabbit";
+   });
+   document.getElementById("frog").addEventListener("mouseover", function(){
+       document.getElementById("frog").textContent = "Frog";
+   });
+   document.getElementById("lion").addEventListener("mouseover", function(){
+       document.getElementById("lion").textContent = "Lion";
+   });
+   document.getElementById("tiger").addEventListener("mouseover", function(){
+       document.getElementById("tiger").textContent = "Tiger";
+   });
+   document.getElementById("mouse").addEventListener("mouseover", function(){
+       document.getElementById("mouse").textContent = "Mouse";
+   });
+   </script>
+    
 </body>
 
 </html>
