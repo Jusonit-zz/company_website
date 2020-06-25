@@ -28,6 +28,6 @@ Customers Page:
     The form should capture a user's name, username, email (done)
     The form should have radio buttons for if they want to be on a mailing list (done)
     The form should have a checkbox for what services they are interested in (done)
-    Each user should be displayed in a list when the user submits their data
+    Each user should be displayed in a list when the user submits their data (done)
         Optional: implement a search bar for the customers, and add an edit feature
     The customers do NOT need to persist
