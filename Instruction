@@ -12,22 +12,22 @@ Landing page:
         Optional: the image should cycle or scroll (done)
 About Us Page:
     It should display a series of images with a text box underneath (done)
-    The text box should have default text displayed
-    If a user mouses over an image, new text should be displayed in the box
-    WHen the user leaves the image, the text should revert to the default message
-        Optional: Add an animation when a user mouses over an image
+    The text box should have default text displayed (done)
+    If a user mouses over an image, new text should be displayed in the box (done)
+    WHen the user leaves the image, the text should revert to the default message (need assistance)
+        Optional: Add an animation when a user mouses over an image (done)
 Products and Services Page:
     It should display a series of images and text descriptions of products/services (done)
-    There should be a "cart" icon that displays the user's current cart and total cost
-    Each product/service should have a button that will add it to the cart
-    The items in the cart should have a button that will remove it from the cart
-        Optional: Implement a search bar for products
+    There should be a "cart" icon that displays the user's current cart and total cost (done)
+    Each product/service should have a button that will add it to the cart (done)
+    The items in the cart should have a button that will remove it from the cart (done)
+        Optional: Implement a search bar for products (done)
     The cart does NOT need to persist
 Customers Page:
-    It should display a form that will capture a user's input
-    The form should capture a user's name, username, email
-    The form should have radio buttons for if they want to be on a mailing list
-    The form should have a checkbox for what services they are interested in
+    It should display a form that will capture a user's input (done)
+    The form should capture a user's name, username, email (done)
+    The form should have radio buttons for if they want to be on a mailing list (done)
+    The form should have a checkbox for what services they are interested in (done)
     Each user should be displayed in a list when the user submits their data
         Optional: implement a search bar for the customers, and add an edit feature
     The customers do NOT need to persist
