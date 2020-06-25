@@ -2,7 +2,18 @@ function SubmitData() {
     var name = document.getElementById("name").value;
     var username = document.getElementById("username").value;
     var email = document.getElementById("email").value;
-    var mailing = "dummy value";
+
+    var mailing = "";
+
+    if (document.getElementById('mailyes').checked) {
+        mailing = document.getElementById('mailyes').value;
+      }
+    else if (document.getElementById('mailno').checked){
+        mailing = document.getElementById('mailno').value;
+    }
+    else{
+        mailing = " ";
+    }
     
     var services=[];
     $("input:checkbox[name=service]:checked").each(function(){
