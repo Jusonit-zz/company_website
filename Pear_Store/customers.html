@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Customers Page</title>
 </head>
 <body>
+
+    <!-- ******************************************
+            FORM TO CAPTURE A USER'S INPUT
+        name, username, email, mailing list, services
+        ********************************************-->
+    <form id="personcontact">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text">
+        <br><br>
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text">
+        <br><br>
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="text">
+        
+        <p>Add to Mailing List:</p>
+        <input type="radio" id="mailreject" name="mail" value="mailyes">
+        <label for="mailyes">Yes</label><br>
+        <input type="radio" id="mailno" name="mail" value="mailno">
+        <label for="mailno">No</label><br> 
+    </form>
+    <p>Services: </p>
+    <input type="checkbox" id="service1" name="service1" value="service1">
+    <label for="service1"> Service 1</label><br>
+    <input type="checkbox" id="service2" name="service2" value="service2">
+    <label for="vehicle2"> Service 2</label><br>
+    <input type="checkbox" id="service3" name="service3" value="service3">
+    <label for="vehicle3"> Service 3</label><br><br>
+
+    <input type="button" value=" Submit " onclick="SubmitData()">
+    <br><br><br>
     
+    <!-- ******************************************
+            TABLE
+        ********************************************-->
+    <table id="list" text-align="center">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Username</td>
+                <td>Email</td>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    
+    <script src="customers.js"></script>
+
 </body>
 </html>
