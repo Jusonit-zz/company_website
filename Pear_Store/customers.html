@@ -5,43 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customers Page</title>
 
-    <link rel="stylesheet" href="customers.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./css/customers.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
     <!-- ******************************************
             TO DO: ADD HEADER/NAV BAR/STYLING...
         ********************************************-->
+    <!-- Navigation Bar -->
+    <nav class='navbar navbar-expand-md navbar-light bg-light sticky-top'>
+        <div class="container-fluid">
+            <img class="navbar-brand" src="images/pear.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products_and_services.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="customers.html">Customer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
 
     <!-- ******************************************
             FORM TO CAPTURE A USER'S INPUT
         name, username, email, mailing list, services
         ********************************************-->
-    <form id="personcontact">
-        <label for="name">Name:</label>
-        <input id="name" name="name" type="text">
-        <br><br>
-        <label for="username">Username:</label>
-        <input id="username" name="username" type="text">
-        <br><br>
-        <label for="email">Email:</label>
-        <input id="email" name="email" type="text">
-        
-        <p>Add to Mailing List:</p>
-        <input type="radio" id="mailreject" name="mail" value="mailyes">
-        <label for="mailyes">Yes</label><br>
-        <input type="radio" id="mailno" name="mail" value="mailno">
-        <label for="mailno">No</label><br> 
-    </form>
-    <p>Services: </p>
-    <input type="checkbox" id="service1" name="service1" value="service1">
-    <label for="service1"> Service 1</label><br>
-    <input type="checkbox" id="service2" name="service2" value="service2">
-    <label for="vehicle2"> Service 2</label><br>
-    <input type="checkbox" id="service3" name="service3" value="service3">
-    <label for="vehicle3"> Service 3</label><br><br>
+        <form>
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+              </div>
+            <div class="form-group row">
+                <label for="inputUsername" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Join Mailing List:</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      No
+                    </label>
+                  </div>
 
-    <input type="button" value=" Submit " onclick="SubmitData()">
-    <br><br><br>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-2">Services</div>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                      Service 1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                      Service 2
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                      Service 3
+                    </label>
+                  </div>
+                </div>
+              </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </div>
+            </div>
+          </form>
     
     <!-- ******************************************
             TABLE OF USERS INPUT
@@ -52,6 +125,8 @@
                 <td>Name</td>
                 <td>Username</td>
                 <td>Email</td>
+                <td>Mailing List</td>
+                <td>Services</td>
             </tr>
         </thead>
         <tbody></tbody>
@@ -60,7 +135,7 @@
      <!-- ******************************************
             TO DO: FINISH FUNCTIONALITY
         ********************************************-->
-    <script src="customers.js"></script>
+    <script src="./css/customers.js"></script>
 
 </body>
 </html>

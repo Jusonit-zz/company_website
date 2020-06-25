@@ -13,3 +13,10 @@
   color: rgb(7, 3, 3);
   text-align: center;
 }
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 100;
+  margin-bottom: 0px;
+}
